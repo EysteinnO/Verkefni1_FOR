@@ -1,0 +1,4 @@
+sceneSetups:
+- path: H:/ufo/Assets/ufoeysteinn.unity
+  isLoaded: 1
+  isActive: 1
