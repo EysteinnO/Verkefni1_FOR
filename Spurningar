@@ -35,7 +35,7 @@ Your Coroutines
 	Hvert loop er processað user input,initialize‘að, teiknað, uppfært game state svo er innri loopan sem keyrir ákveðinn part af kóðanum fyrir hvert entity innan forritsins. Í framhaldi þess er renderað síðan leikinn.
 
 (2%) 2. Útskýrðuð hvernig hægt er að fá hreyfingu (e. movement) á hlut með notkun e. velocity, position ogsfrv. Notaðu kóða, stærðfræði (vigrar og stefnur) og aðrar leiðir til útskýringar. (2%)
-
+Vantar
 
 
 
@@ -43,7 +43,7 @@ Your Coroutines
 
 Colliders skilgreinir eitthvað form eða hlut af objecti fyrir þann tilang að geta lent í árekstri. Collider er ósýnilegur þarf ekki að vera jafn stór eða lítill og hluturinn sjálfur, það fer eftir eigin vali. 
 Í Unity er collision eða árekstur gerður með innbyggðu falli sem heitir Collider2D. Þar er notast við tögg, semsagt þá er tildæmis aðal game objectið (2d kall til dæmis) með taggið „Player“ og veggir komnir með BoxCollider2D. Meö töggum er hægt að skilgreina hvað er hvað og þannig loka á að hlutir fari í gegnum hvorn annan.
- 
+Sjá code.png fyrir sýnidæmi á collision.
 
 Þarna er búið að stilla á að það gameobject sem er með taggið „PickUp“ á að SetActive(false) og hverfur þegar það lendir í árekstri við annað gameobject.
 
