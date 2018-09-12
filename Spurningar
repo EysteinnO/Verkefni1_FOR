@@ -1,0 +1,50 @@
+Verkefni 1 – Grunnatriði í leikjagerð 10% 
+1.	Útskýrðu vel e. GameLoop í leikjagerð. 
+
+Í unity virkar game loop þannig að á einum ramma gerist eftirfarandi:
+
+
+->Eðlisfræði
+
+OnMouseX				
+	|
+      ->FixedUpdate
+	|
+      ->PhysX
+	|
+      ->OnCollission gerist X
+	|
+      ->OnTrigger gerist X
+	|
+      ->Your coroutines
+
+|
+Update
+|
+Your Coroutines
+|
+Animation
+|
+LateUpdate
+|
+Rendering
+|
+Your Coroutines
+
+	En almennt er loopan eftirfarandi:
+	Hvert loop er processað user input,initialize‘að, teiknað, uppfært game state svo er innri loopan sem keyrir ákveðinn part af kóðanum fyrir hvert entity innan forritsins. Í framhaldi þess er renderað síðan leikinn.
+
+(2%) 2. Útskýrðuð hvernig hægt er að fá hreyfingu (e. movement) á hlut með notkun e. velocity, position ogsfrv. Notaðu kóða, stærðfræði (vigrar og stefnur) og aðrar leiðir til útskýringar. (2%)
+
+
+
+
+3.  Útskýrðu hvernig árekstur (e. collision detection) gæti verið útfærður í leik með sýnidæmi (kóði, skýringamynd, stærðfræði osfrv.). (2%) 
+
+Colliders skilgreinir eitthvað form eða hlut af objecti fyrir þann tilang að geta lent í árekstri. Collider er ósýnilegur þarf ekki að vera jafn stór eða lítill og hluturinn sjálfur, það fer eftir eigin vali. 
+Í Unity er collision eða árekstur gerður með innbyggðu falli sem heitir Collider2D. Þar er notast við tögg, semsagt þá er tildæmis aðal game objectið (2d kall til dæmis) með taggið „Player“ og veggir komnir með BoxCollider2D. Meö töggum er hægt að skilgreina hvað er hvað og þannig loka á að hlutir fari í gegnum hvorn annan.
+ 
+
+Þarna er búið að stilla á að það gameobject sem er með taggið „PickUp“ á að SetActive(false) og hverfur þegar það lendir í árekstri við annað gameobject.
+
+4. Leikur (4%) • Búðu til umhverfi sem hefur hluti sem hafa ákveðna lögun (e. shape). • Umhverfi þarf að hafa aðra hluti og/eða e. enemies sem hann getur rekið sig í (e. collision detection). • Útfærðu hreyfingu (e. movement) á hlut eða hlutum. • Útfærðu einhver virkni eða viðbrögð þegar hlutur gerir eitthvað ákveðið (e. event handling / response). • Það er leyfilegt að nota leikjavél eða leikjasafn til að ná þessu fram. Notaðu skjámyndbandsupptöku eða sambærilegt til að sýna leik í notkun. Sjá t.d. https://screencast-o-matic.com/ Námsmat og skil Gefið er full fyrir rétt og fullnægjandi svar, skýringu eða lausn þegar það á við, ekkert ef svar eða skýring er ábótavant. Skilaðu á Innu Github slóð með svörum, kóða og tengil á myndband (t.d. youtube).
